@@ -9,14 +9,9 @@
  * ################################################################################
  */
 
-var myStackII = function(){
-    var stack = [];
-
-}();
-
 var myStack = function(){
     var stack = [];
-    //console.log("hoii "+item);
+    
     return {
         push: function(item){
             stack.push(item);
