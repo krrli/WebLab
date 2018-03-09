@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Weblab_AWS" uuid="848368b3-8f3c-4461-a474-681a757b0630">
+      <database-info product="MySQL" version="5.6.38" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.45 ( Revision: 9131eefa398531c7dc98776e8a3fe839e544c5b2 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-schemas>*:php</introspection-schemas>
+      <ssh-properties>
+        <enabled>true</enabled>
+        <proxy-host>ec2-34-245-34-121.eu-west-1.compute.amazonaws.com</proxy-host>
+        <proxy-port>22</proxy-port>
+        <user>ec2-user</user>
+        <use-password>false</use-password>
+        <auth-type>KEY_PAIR</auth-type>
+        <private-key-path>C:\Users\carla\Dropbox\HSLU-CI\8.FS18\WEBLAB\AWSKey\webprog13.ppk</private-key-path>
+      </ssh-properties>
+    </data-source>
+  </component>
+</project>
