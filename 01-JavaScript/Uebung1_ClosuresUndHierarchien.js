@@ -11,7 +11,7 @@
 
 var myStack = function(){
     var stack = [];
-    
+
     return {
         push: function(item){
             stack.push(item);
@@ -127,3 +127,4 @@ function exercise2(){
 
 console.log("----- ex. 2 -----");
 exercise2();
+
