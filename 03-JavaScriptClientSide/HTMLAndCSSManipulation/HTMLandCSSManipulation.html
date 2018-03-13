@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="fadeOut.css" type="text/css">
+    <meta charset="UTF-8">
+    <title>Basic HTML und CSS Manipulation</title>
+</head>
+<body>
+    <h1 id="ueberschrift">Hoi!</h1>
+    <br>
+    <button onclick="changeLetterColor()" type="btnTitle">Trick</button>
+    <h2 id="ueberschrift2">Hoi du!</h2>
+    <button onclick="changeText()" type="btnTitle2">Trick</button>
+    <br>
+    <br>
+    <br>
+    <p id= "deErstiText">
+    Erzeugen Sie eine einfache Webseite in HTML die einen oder mehrere Texte und einen Button enthält.<br>
+        Verändern Sie den Inhalt oder Aussehen der Webseite, wie folgt:
+    </p>
+    <br>
+    <br>
+    <button onclick="changeBackgroundColor()" type="btnUeberschrift">Trick</button>
+    <div id="enumeratedTwo" >
+        <br>
+        <br>
+        1. Verändern Sie den Text.<br>
+        2. Verändern  Sie den Hintergrund des Texts<br>
+        3. Verändern  Sie den Hintergrund des Texts, sodass bei jedem drücken eines Buttons eine zufällige Farbe gesetzt wird.<br>
+        4. Old Style Animation: Erzeugen Sie eine JavaScript Funktion, die ein Element verblassen lässt, i.e. es wird langsam unsichtbar. Wenden Sie diese auf den Text an.
+        <br>
+        <br>
+    </div>
+    <button onclick="removeText()" type="btnEnumeratedText">Trick</button>
+
+
+
+    <div id="enumerated" class="fadeOut">
+        <br>
+        <br>
+    1. Verändern Sie den Text.<br>
+    2. Verändern  Sie den Hintergrund des Texts<br>
+    3. Verändern  Sie den Hintergrund des Texts, sodass bei jedem drücken eines Buttons eine zufällige Farbe gesetzt wird.<br>
+    4. Old Style Animation: Erzeugen Sie eine JavaScript Funktion, die ein Element verblassen lässt, i.e. es wird langsam unsichtbar. Wenden Sie diese auf den Text an.
+        <br>
+        <br>
+    </div>
+
+    <script>
+        function changeLetterColor(){
+            if(document.getElementById("ueberschrift").style.color === "magenta"){
+                document.getElementById("ueberschrift").style.color ="black";
+                return;
+            }
+            document.getElementById("ueberschrift").style.color ="magenta";
+        }
+        
+        function changeText() {
+            document.getElementById("ueberschrift2").innerHTML = "Hoi Diego";
+        }
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        function invertColor(hex) {
+            if (hex.indexOf('#') === 0) {
+                hex = hex.slice(1);
+            }
+            // convert 3-digit hex to 6-digits.
+            if (hex.length === 3) {
+                hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
+            }
+            if (hex.length !== 6) {
+                throw new Error('Invalid HEX color.');
+            }
+            // invert color components
+            var r = (255 - parseInt(hex.slice(0, 2), 16)).toString(16),
+                g = (255 - parseInt(hex.slice(2, 4), 16)).toString(16),
+                b = (255 - parseInt(hex.slice(4, 6), 16)).toString(16);
+            // pad each with zeros and return
+            return '#' + padZero(r) + padZero(g) + padZero(b);
+        }
+
+        function padZero(str, len) {
+            len = len || 2;
+            var zeros = new Array(len).join('0');
+            return (zeros + str).slice(-len);
+        }
+
+        function changeBackgroundColor(){
+            var randomColor = getRandomColor();
+            document.getElementById("deErstiText").style.background = randomColor;
+            document.getElementById("deErstiText").style.color = invertColor(randomColor);
+        }
+        function removeText() {
+            //var element = document.getElementById("enumeratedTwo");
+            //fade(element);
+            if ( document.getElementById("enumeratedTwo").classList.contains('fadeOut') ){
+                document.getElementById("enumeratedTwo").classList.remove('fadeOut');
+            }else{
+                document.getElementById("enumeratedTwo").classList.add('fadeOut');
+            }
+        }
+    </script>
+
+</body>
+</html>
