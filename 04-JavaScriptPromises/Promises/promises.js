@@ -5,7 +5,13 @@
  * Im Fall, dass ein Element des Array kein String ist, soll ein Fehler auftreten.
  *
  * Machen sie die Funktion mittels setTimeout asynchron.
+ *
+ * Verkettung von Promises
+ * Erstellen Sie eine zweite Funktion, die ein Array von Strings sortiert
+ * und verketten Sie die beiden Promises.
+ * Was geschieht beim Fehlerfall in der ersten Promise?
  */
+
 
 "use strict";
 function stringArray2Uppercase(stringArray){
@@ -25,16 +31,23 @@ function stringArray2Uppercase(stringArray){
     return promise;
 }
 
+function sortArray(array){
+    return array.sort();
+}
+
 function main(){
     var stringArray = ["hoi", "tschüss", "blabla", "supi"];
     var irgendoepisArray = ["hoi", "tschüss", 123, "blabla", "supi"];
 
     stringArray2Uppercase(stringArray)
         .then(console.log)
+        .then(sortArray(stringArray))
         .catch(console.error);
+
 
     stringArray2Uppercase(irgendoepisArray)
         .then(console.log)
+        .then(sortArray(stringArray))
         .catch(console.error);
 }
 
