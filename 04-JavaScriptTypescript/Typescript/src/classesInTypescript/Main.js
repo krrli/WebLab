@@ -15,4 +15,4 @@ console.log("Draw: ", rectangle.draw());
 console.log("--- Circle ---");
 console.log("Area: ", circle.area());
 console.log("Draw: ", circle.draw());
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=Main.js.map

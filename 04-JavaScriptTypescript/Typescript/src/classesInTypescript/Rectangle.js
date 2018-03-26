@@ -14,4 +14,4 @@ var Rectangle = /** @class */ (function () {
     return Rectangle;
 }());
 exports.Rectangle = Rectangle;
-//# sourceMappingURL=rectangle.js.map
+//# sourceMappingURL=Rectangle.js.map

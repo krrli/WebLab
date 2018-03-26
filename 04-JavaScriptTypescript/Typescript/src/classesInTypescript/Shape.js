@@ -14,4 +14,4 @@ var Shape = /** @class */ (function () {
     return Shape;
 }());
 exports.Shape = Shape;
-//# sourceMappingURL=shape.js.map
+//# sourceMappingURL=Shape.js.map
