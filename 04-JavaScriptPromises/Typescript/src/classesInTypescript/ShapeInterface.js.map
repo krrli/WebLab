@@ -1,0 +1,1 @@
+{"version":3,"file":"shapeInterface.js","sourceRoot":"","sources":["shapeInterface.ts"],"names":[],"mappings":"","sourcesContent":["interface ShapeInterface{\n    draw(): string;\n    area(): number;\n}\n\n"]}

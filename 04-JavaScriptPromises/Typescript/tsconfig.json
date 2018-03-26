@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "inlineSources": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
+
+
+/*
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "declaration": true,
+    "removeComments": false,
+    "noImplicitAny": true,
+    "outDir": "built/",
+    "types": [
+      "jasmine", "node",
+      "chalk", "glob", "minimatch",
+      "minimist", "optimist", "q",
+      "selenium-webdriver"
+    ]
+  },
+  "exclude": [
+    "built",
+    "node_modules",
+    "testapp",
+    "website",
+    "scripts",
+    "exampleTypescript",
+    "spec"
+  ]
+}
+*/
