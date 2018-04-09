@@ -17,11 +17,9 @@
       <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tour-of-heroes/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#58#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" column="41" lean-forward="false" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -39,8 +37,8 @@
       <file leaf-file-name="hero.service.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tour-of-heroes/src/app/hero.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="19" column="20" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="21" selection-end-column="7" />
+            <state relative-caret-position="391">
+              <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -85,8 +83,8 @@
         <option value="$PROJECT_DIR$/tour-of-heroes/src/app/hero-detail/hero-detail.component.html" />
         <option value="$PROJECT_DIR$/tour-of-heroes/src/app/hero-detail/hero-detail.component.ts" />
         <option value="$PROJECT_DIR$/tour-of-heroes/src/app/hero-detail/hero-detail.component.css" />
-        <option value="$PROJECT_DIR$/tour-of-heroes/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/tour-of-heroes/src/app/in-memory-data.service.ts" />
+        <option value="$PROJECT_DIR$/tour-of-heroes/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/tour-of-heroes/src/app/hero.service.ts" />
       </list>
     </option>
@@ -243,12 +241,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523279273225</updated>
-      <workItem from="1523279275113" duration="7595000" />
+      <workItem from="1523279275113" duration="7946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7595000" />
+    <option name="totallyTimeSpent" value="7946000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2873" y="0" width="974" height="1167" extended-state="0" />
@@ -471,11 +469,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tour-of-heroes/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="41" lean-forward="false" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -489,8 +485,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tour-of-heroes/src/app/hero.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="19" column="20" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="21" selection-end-column="7" />
+        <state relative-caret-position="391">
+          <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
